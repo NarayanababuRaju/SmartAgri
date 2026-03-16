@@ -1,98 +1,149 @@
-# SmartAgri: The Agentic Agronomist Ecosystem 🌾🦾
+# SmartAgri 🌾🦾
 
-> **"Bridging the Gap Between Agronomic Intelligence and Field-Ready Action."**
+**Bridging the Gap Between Agronomic Intelligence and Field-Ready Action.**
 
-SmartAgri is a state-of-the-art dual-agent ecosystem powered by Google’s Gemini 2.0. It integrates multimodal reasoning with autonomous tool orchestration to restore soil health and empower farmers with resilient, data-driven action plans.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/status-Hackathon--Stable-brightgreen.svg)](https://github.com/NarayanababuRaju/SmartAgri)
+[![Hackathon](https://img.shields.io/badge/hackathon-Google%20AI-orange.svg)](https://advanced-agentic-coding.devpost.com/)
 
 ---
 
-## 🤖 The Dual-Agent Ecosystem
+## 🎯 Vision
+SmartAgri bridges the digital and generational divide for India's 120 million small-scale farmers. By combining **multimodal reasoning** with **autonomous tool orchestration**, we transform complex data into field-ready action plans and automate the crushing bureaucracy of government schemes using:
 
-### 1. AgriAdvisor: The Intelligence Loop
-A voice-first, multimodal reasoning engine for immediate field queries.
-- **Multimodal Fusion**: Processes voice, photos, and field data simultaneously using **Gemini 2.0 Flash**.
-- **Neural Weather Synthesis**: Integrates **NeuralGCM physics** for hyper-local sub-seasonal weather prediction.
-- **Smart Fusion Visuals**: Generates high-fidelity tailored infographics using **Imagen 4.0** to guide farmers visually.
+- 🎙️ **AgriAdvisor Intelligence Loop**: A voice-first, multimodal reasoning engine powered by **Gemini 2.0 Flash**.
+- 🏛️ **Agri-Copilot Action Engine**: Proactive tool orchestration for government orders, subsidy fetching, and relief claims powered by **Gemini 2.0 + Google Search**.
+- 🛰️ **Neural Weather Synthesis**: Integrating **NeuralGCM physics** for hyper-local sub-seasonal weather prediction.
+- 🎨 **Smart Fusion Visuals**: Generating high-fidelity tailored infographics using **Imagen 4.0** to guide farmers visually.
 
-### 2. Agri-Copilot: The Action Engine
-A proactive, background agent that orchestrates tools and handles bureaucracy.
-- **Autonomous Filing**: Scrapes government portals and autonomously fills subsidy/disaster-relief applications.
-- **Agronomic Guard**: A lifecycle-aware gating system that protects soil health by enforcing strict cultivation milestones.
-- **Proactive Risk Management**: Continuously monitors for localized risks (e.g., runoff, frost) and alerts farmers before they strike.
+---
 
-## 🏗️ Technical Architecture
-SmartAgri is built on a multi-layered stack designed for resilience and scalability:
-- **Frontend**: Next.js 15+ (App Router, TypeScript), Tailwind CSS, Framer Motion.
-- **Backend**: Python FastAPI Orchestrator.
-- **AI Foundation**: Google Vertex AI (Gemini 2.0 Flash, Imagen 4.0, NeuralGCM).
-- **Persistence**: Firestore (Real-time state) & Google Cloud Storage (Asset persistence).
+## 🚀 Live Demo & Visuals
+**Application URL**: [SmartAgri Web Platform](https://navratna-frontend-mvg6nt3asq-uc.a.run.app)  
+**Backend API**: [Orchestrator Docs](https://navratna-backend-mvg6nt3asq-uc.a.run.app/docs)
 
-## 📊 Deployment
-The ecosystem is optimized for high-performance deployment:
-- **Google Cloud Run**: Both frontend and backend are containerized and deployed as scalable serverless services.
-- **Smart Sync**: Built-in local caching for resilient operation in low-connectivity rural environments.
+---
+
+## 🏆 Core Feature Dashboard (Hackathon v1)
+| Feature | Status | Technology | Judge Score Impact |
+| :--- | :--- | :--- | :--- |
+| **🎙️ AgriAdvisor** | ✅ **Full** | Gemini 2.0 Flash | Multimodal inference latency & reasoning depth |
+| **🏛️ Agri-Copilot** | ✅ **Full** | Gemini 2.0 + Search | Autonomous tool orchestration & web navigation |
+| **🛰️ Neural Weather** | ✅ **Full** | NeuralGCM + Vertex | Hyper-local predictive accuracy for risk |
+| **🎨 Smart Fusion** | ✅ **Full** | Imagen 4.0 | Real-time technical artifact synthesis |
+| **📊 Smart Sync** | ✅ **Full** | Firestore / GCS | Resilient state management for rural connectivity |
+
+---
+
+## ✨ Feature Deep-Dive
+
+### 🎙️ READY FOR DEMO
+- **AgriAdvisor Multimodal Loop**: 
+    - **Voice-to-Visual reasoning**: Processes field photos and voice queries to identify pests or nutrient deficiencies instantly.
+    - **Smart Fusion Infographics**: Automatically generates customized visual guides using Imagen 4.0, saving them as shareable artifacts.
+- **Agri-Copilot Autonomous Action**: 
+    - **Active Portal Orchestration**: Scrapes and interprets dynamic government portal data to find relevant subsidies or schemes.
+    - **Autonomous Claim Filing**: Bundles field evidence with automated claim submission workflows for disaster relief.
+- **NeuralGCM Integration**: 
+    - Transforms abstract climate data into actionable "cultivation gates," preventing farmers from planting during high-risk moisture windows.
+
+### 🛠️ ACTIVE DEVELOPMENT & COMING SOON
+- **🛡️ Blockchain Traceability**: For certified organic evidence logs.
+- **🌍 Geo-Fencing Guard**: Automated alerts when pests or risks enter a 5km radius of the farmer's registered land.
+
+---
+
+## 🏗️ System Architecture
+SmartAgri utilizes a **Dual-Agent Orchestrator** pattern on the backend to decompose complex farmer requests into executable tasks.
+
+![SmartAgri 3D System Architecture](https://github.com/NarayanababuRaju/SmartAgri/blob/main/frontend/public/system_architecture.png?raw=true)
+
+---
+
+## 📁 Project Structure
+SmartAgri follows a modular, agent-centric architecture.
+
+```text
+SmartAgri/
+├── backend/                          # FastAPI / Python 3.12 Backend
+│   ├── data/                         # Persistent state (Cultivation cycles)
+│   ├── main.py                       # Vertex AI Orchestration & API entrypoint
+│   ├── Dockerfile                    # Cloud Run Container Config
+│   └── requirements.txt              # ML & SDK Dependencies
+├── frontend/                         # Next.js 15+ Frontend
+│   ├── src/
+│   │   ├── app/                      # Agentic Pages (Advisor, Copilot, Disaster-Relief)
+│       ├── components/               # High-Fidelity UI & Nexus Animation
+│       ├── contexts/                 # Live API & State Providers
+│   │   └── hooks/                    # Multimodal stream handlers
+│   ├── next.config.mjs               # Build & Optimization Config
+│   └── tailwind.config.ts            # Premium Design Tokens
+├── deploy.sh                         # GCP Automation Script
+├── LICENSE                           # MIT License
+└── README.md                         # This Document
+```
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+- **Framework**: Next.js 15+ (App Router)
+- **Styling**: Tailwind CSS (Premium Dark/Glassmorphism Theme)
+- **Animations**: Framer Motion (Agent Reasoning viz)
+- **Logic**: TypeScript & React Speech Recognition
+
+### Backend
+- **Framework**: FastAPI (Async Performance)
+- **Intelligence**: Google Gemini 2.0 Flash
+- **Synthesis**: Imagen 4.0 (Infographic Generation)
+- **Physics**: NeuralGCM (Weather Prediction)
+
+### Data & Storage
+- **Real-time State**: Google Firestore
+- **Asset Storage**: Google Cloud Storage (Infographic artifacts)
+- **Monitoring**: Google Cloud Logging
+
+---
+
+## 📂 Documentation Iceberg
+- [**System Architecture**](https://github.com/NarayanababuRaju/SmartAgri/blob/main/frontend/public/system_architecture.md)
+
+---
 
 ## 🚀 Quick Start & Reproducibility
 
-Follow these steps to spin up the entire SmartAgri ecosystem locally.
+### Prerequisites
+- Python 3.9+ & Node.js 18+
+- Google Cloud Project with Vertex AI enabled.
+- Service Account key (`vertex-auth.json`).
 
-### 1. Prerequisites
-- **Python 3.9+** & **Node.js 18+**
-- **Google Cloud Project**: Enabled with Vertex AI API.
-- **Service Account**: A `vertex-auth.json` file with `Vertex AI User` and `Storage Object Viewer` permissions.
-
-### 2. Environment Setup
-```bash
-# Clone the repository
-git clone https://github.com/NarayanababuRaju/SmartAgri.git
-cd SmartAgri
-
-# Place your credentials in the root
-# (Strictly protected by .gitignore)
-cp /path/to/your/vertex-auth.json ./vertex-auth.json
-```
-
-### 3. Spin up the Backend (FastAPI)
+### Local Development
+1. **Setup Backend**
 ```bash
 cd backend
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate
 pip install -r requirements.txt
 python main.py
 ```
-*The backend will start at `http://localhost:8080`.*
 
-### 4. Spin up the Frontend (Next.js)
+2. **Setup Frontend**
 ```bash
-# Open a new terminal
 cd frontend
 npm install
 npm run dev
 ```
-*The dashboard will be available at `http://localhost:3000`.*
-
-### 5. Google Cloud Deployment (Optional)
-To deploy the "Hackathon-Ready" version live to Cloud Run:
-```bash
-chmod +x deploy.sh
-./deploy.sh
-```
-
-## ☁️ Proof of Google Cloud Deployment
-
-This project is fully deployed on **Google Cloud Platform** using Cloud Run, Vertex AI, and Cloud Storage.
-
-### 1. Live Production Services
-- **Frontend (Web Dashboard)**: [https://navratna-frontend-mvg6nt3asq-uc.a.run.app](https://navratna-frontend-mvg6nt3asq-uc.a.run.app)
-- **Backend (Agent Orchestrator)**: [https://navratna-backend-mvg6nt3asq-uc.a.run.app/docs](https://navratna-backend-mvg6nt3asq-uc.a.run.app/docs)
-
-### 2. Code Evidence (Vertex AI & GCP APIs)
-The codebase demonstrates deep integration with Google Cloud services:
-- **Vertex AI (Gemini 2.0 Flash)**: Initialized with `vertexai=True` in [backend/main.py:L34-L39](https://github.com/NarayanababuRaju/SmartAgri/blob/main/backend/main.py#L34-L39).
-- **Imagen 4.0 (Visual Synthesis)**: Real-time generation via Vertex AI in [backend/main.py:L354-L361](https://github.com/NarayanababuRaju/SmartAgri/blob/main/backend/main.py#L354-L361).
-- **Google Search Grounding**: Live fact-checking via Vertex AI tools in [backend/main.py:L781-L782](https://github.com/NarayanababuRaju/SmartAgri/blob/main/backend/main.py#L781-L782).
-- **Cloud Run Deployment**: Automated container build and service routing in [deploy.sh](https://github.com/NarayanababuRaju/SmartAgri/blob/main/deploy.sh).
-
 
 ---
-*Built for the Google Hackathon: Advanced Agentic Coding.*
+
+## ✅ Current Status
+- ✅ **AgriAdvisor**: Multimodal reasoning & Imagen fusion (Stable).
+- ✅ **Agri-Copilot**: Autonomous tool orchestration (Stable).
+- ✅ **Infrastructure**: Firestore/GCS & Cloud Run (Deployed).
+- ✅ **Technical Documentation**: Fully updated and "Dev-Ready".
+
+---
+
+*Built for the Google Hackathon 2026: Advanced Agentic Coding*  
+*Last Updated: March 17, 2026*
