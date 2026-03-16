@@ -1,0 +1,43 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@google/genai": "^1.43.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.3.1",
+    "eventemitter3": "^5.0.4",
+    "html-to-image": "^1.11.13",
+    "lodash": "^4.17.23",
+    "lucide-react": "^0.576.0",
+    "motion": "^12.34.3",
+    "next": "16.1.6",
+    "node-fetch": "^3.3.2",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-icons": "^5.5.0",
+    "react-markdown": "^10.1.0",
+    "react-speech-recognition": "^4.0.1",
+    "regenerator-runtime": "^0.14.1",
+    "tailwind-merge": "^3.5.0",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/lodash": "^4.17.24",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-speech-recognition": "^3.9.6",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

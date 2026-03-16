@@ -1,0 +1,12 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [
+    'build',
+    '--build-arg', 'NEXT_PUBLIC_API_URL=${_NEXT_PUBLIC_API_URL}',
+    '-t', 'gcr.io/$PROJECT_ID/navratna-frontend',
+    '.'
+  ]
+images:
+- 'gcr.io/$PROJECT_ID/navratna-frontend'
+substitutions:
+  _NEXT_PUBLIC_API_URL: 'http://localhost:8080'
